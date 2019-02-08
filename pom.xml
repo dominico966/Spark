@@ -119,13 +119,14 @@
                   -->
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>native2ascii-maven-plugin</artifactId>
-                <version>1.0-beta-1</version>
                 <executions>
                     <execution>
-                        <id>native2ascii</id>
                         <goals>
-                            <goal>native2ascii</goal>
+                            <goal>resources</goal>
                         </goals>
+                        <configuration>
+                            <srcDir>${basedir}/src/main/resources</srcDir>
+                        </configuration>
                     </execution>
                 </executions>
             </plugin>
